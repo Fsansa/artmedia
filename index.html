@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Artmèdia</title>
-
+  
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
-
 <link href="css/estils.css" rel="stylesheet">
+
  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>  
@@ -53,8 +53,39 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- slider de posts-->
+
+<script src="js/jquery.slides.min.js"></script>
+
+	<script>
+		
+$(function() {
+	$('#slides').slidesjs({
+		width: 940,
+		navigation: {active:false},
+		pagination: {active:false},
+		effect: { slide: {speed: 1200}}
+ 
+	});
+	
+	// After the Plugin has fully initialized itself on the element it adds a reference to itself 
+	// as a data-attribute on the element.
+	// sjs is now a global variable you can use to control slideshow
+	sjs = $('#slides').data('plugin_slidesjs');
+
+	// power up next button
+	$('.sjs .next').click( function(clickevent){ sjs.next() } );
+	
+	// power up prev button
+	$('.sjs .prev').click( function(clickevent){ sjs.previous() } );
+	
+	
+});
+  
+
+	</script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.js"></script>
 </body>
 </html>
