@@ -170,13 +170,13 @@ $(function() {
                 // Cancel the default event (this isn't a real link).
                 event.preventDefault();
                 // Check to see if the content is visible.
-                if (hiddenFem.is( ":visible" )){
+                if (hiddenContent.is( ":visible" )){
                     // Hide it slowly.
-                    hiddenFem.slideUp( 3000 );
+                    hiddenContent.slideUp( 3000 );
 					hiddenProjects.slideDown(3000);
                 } else {
                     // Show it slowly.
-                    hiddenFem.slideDown( 3000 );
+                    hiddenContent.slideDown( 3000 );
 					hiddenProjects.slideUp( 3000 );
                 }
             }
