@@ -163,7 +163,7 @@ $(function() {
  // Slidedown and up
         var hiddenContent = $( "div.content" );
 		var hiddenProjects =$( "div.projectes" );
-		var hiddenFem =$( "div.fem" );
+		
         // Bind to the Read More link to toggle the
         $( "a.readMore" ).click(
             function( event ){
@@ -181,6 +181,7 @@ $(function() {
                 }
             }
         );
+		var hiddenFem =$( "div.fem" );
 		 $( "a.femclick" ).click(
             function( event ){
                 // Cancel the default event (this isn't a real link).
