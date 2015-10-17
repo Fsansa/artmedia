@@ -35,7 +35,7 @@
 
 
         <!-- BEGIN: Hidden Content. -->
-        <div class="fem" style="display: none ;">
+        <div class="femcontent" style="display: none ;">
 
             COSES GUAIS!!! - the
             content that the user can see when the Read More
@@ -163,7 +163,7 @@ $(function() {
  // Slidedown and up
         var hiddenContent = $( "div.content" );
 		var hiddenProjects =$( "div.projectes" );
-		var hiddenFem =$( "div.fem" );
+		var hiddenFem =$( "div.femcontent" );
 		
         // Bind to the Read More link to toggle the
         $( "a.readMore" ).click(
@@ -194,8 +194,8 @@ $(function() {
 					hiddenProjects.slideDown(3000);
                 } else {
                     // Show it slowly.
-                    hiddenProjects.slideUp( 3000 );
 					hiddenFem.slideUp( 3000 );
+					hiddenProjects.slideUp( 3000 );
                 }
             }
         );
