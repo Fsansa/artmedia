@@ -133,6 +133,7 @@ $(function() {
   
  // Slidedown and up
         var hiddenContent = $( "div.content" );
+		var hiddenProjects =$( "div.projectes" );
         // Bind to the Read More link to toggle the
         $( "a.readMore" ).click(
             function( event ){
@@ -142,9 +143,11 @@ $(function() {
                 if (hiddenContent.is( ":visible" )){
                     // Hide it slowly.
                     hiddenContent.slideUp( 3000 );
+					hiddenProjects.Slideup(3000);
                 } else {
                     // Show it slowly.
                     hiddenContent.slideDown( 3000 );
+					hiddenProjects.slideup(3000);
                 }
             }
         );
