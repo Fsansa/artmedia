@@ -55,6 +55,41 @@
         <div class="row">
         	<div id="contacta" class="col-md-12">
             
+            <div style="width: 300px ; border: 1px solid black ; padding: 10px ;">
+
+        Don't you want to
+        <a href="#" class="readMore">Read More</a>?
+
+
+        <!-- BEGIN: Hidden Content. -->
+        <div class="content" style="display: none ;">
+
+            This is where the additional content will go - the
+            content that the user can see when the Read More
+            link is clicked. We're going to use jQuery to slide
+            the content of this container into view, with a slow
+            transition. This is where the additional content will go
+            - the content that the user can see when the Read More
+            link is clicked. We're going to use jQuery to slide
+            the content of this container into view, with a slow
+            transition. This is where the additional content will go
+            - the content that the user can see when the Read More
+            link is clicked. We're going to use jQuery to slide
+            the content of this container into view, with a slow
+            transition. This is where the additional content will go
+            - the content that the user can see when the Read More
+            link is clicked. We're going to use jQuery to slide
+            the content of this container into view, with a slow
+            transition.
+
+        </div>
+        <!-- END: Hidden Content. -->
+
+
+    </div>
+    <!-- END: Container. -->
+
+            
             </div>
         
         </div>
@@ -95,6 +130,27 @@ $(function() {
 	
 	
 });
+  
+ // Slidedown and up
+        var hiddenContent = $( "div.content" );
+        // Bind to the Read More link to toggle the
+        $( "a.readMore" ).click(
+            function( event ){
+                // Cancel the default event (this isn't a real link).
+                event.preventDefault();
+                // Check to see if the content is visible.
+                if (hiddenContent.is( ":visible" )){
+                    // Hide it slowly.
+                    hiddenContent.slideUp( 3000 );
+                } else {
+                    // Show it slowly.
+                    hiddenContent.slideDown( 3000 );
+                }
+            }
+        );
+		
+		//fí lidedown  
+  
   
 
 	</script>
