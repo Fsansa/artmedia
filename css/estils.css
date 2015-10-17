@@ -51,7 +51,24 @@ h1 {
 	color: whitesmoke;	
 	}
 	
-.sjs {
+#fletxes {
+	height: 5px;
+	}
+#fletxes .gris {
+	color: #ccc;
+	}
+#fletxes .gris:hover {
+	color: #999;
+	cursor: pointer;
+	}
+#fletxes ul {
+	list-style-type: none;	
+	float: right;
+	position: relative;
+	top: -53px;
+	
+	}
+#fletxes ul li {
 	display: inline;
 	}
 	
