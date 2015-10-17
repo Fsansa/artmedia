@@ -163,20 +163,20 @@ $(function() {
  // Slidedown and up
         var hiddenContent = $( "div.content" );
 		var hiddenProjects =$( "div.projectes" );
-		var hiddenFem =$( "div.quefem" );
+		var hiddenFem =$( "div.fem" );
         // Bind to the Read More link to toggle the
         $( "a.readMore" ).click(
             function( event ){
                 // Cancel the default event (this isn't a real link).
                 event.preventDefault();
                 // Check to see if the content is visible.
-                if (hiddenContent.is( ":visible" )){
+                if (hiddenFem.is( ":visible" )){
                     // Hide it slowly.
-                    hiddenContent.slideUp( 3000 );
+                    hiddenFem.slideUp( 3000 );
 					hiddenProjects.slideDown(3000);
                 } else {
                     // Show it slowly.
-                    hiddenContent.slideDown( 3000 );
+                    hiddenFem.slideDown( 3000 );
 					hiddenProjects.slideUp( 3000 );
                 }
             }
