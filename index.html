@@ -201,6 +201,8 @@ $(function() {
 		var hiddenProjects =$( "div.projectes" );
 		var hiddenFem =$( "div.femcontent" );
 		var hiddenCentral= $( "div.femcentral" );
+		var hiddenContacta= $( "div.contacta" );
+		
 		 
 		
         // Bind to the Read More link to toggle the
@@ -232,13 +234,13 @@ $(function() {
                     // Hide it slowly.
                     hiddenFem.slideToggle(800,"easeOutBounce");
 					hiddenProjects.slideDown(400);
-					hiddenContent.slideDown(400);
+					hiddenContacta.slideDown(400);
 					//hiddenCentral.toggle('slide', { direction: "right" }, 500);
                 } else {
                     // Show it slowly.
 					hiddenFem.slideDown( 400);
 					hiddenProjects.slideToggle(800,"easeOutBounce");
-					hiddenCentral.slideUp(400);
+					hiddenContacta.slideUp(400);
 					hiddenCentral.toggle('slide', { direction: "left" }, 500);
 					
 					
