@@ -207,12 +207,12 @@ $(function() {
                 if (hiddenFem.is( ":visible" )){
                     // Hide it slowly.
 					
-                    hiddenFem.slideUp(800).animate({easing: 'easeOutBounce'});
-					hiddenProjects.slideDown(800).animate({easing: 'easeOutBounce'});
+                    hiddenFem.slideUp(800).animate('slow','easeOutBounce');
+					hiddenProjects.slideDown(800).animate('slow','easeOutBounce');
                 } else {
                     // Show it slowly.
-					hiddenFem.slideDown(800).animate({easing: 'easeOutBounce'});
-					hiddenProjects.slideUp(800).animate({easing: 'easeOutBounce'});
+					hiddenFem.slideDown(800).animate('slow','easeOutBounce');
+					hiddenProjects.slideUp(800).animate('slow','easeOutBounce');
 					
                 }
             }
