@@ -64,6 +64,7 @@
    
    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12" >
    		<div class="row">
+           <div class="row">
         	<div class="col-md-12">
         	<div id="quefem">
              
@@ -93,6 +94,34 @@
             link is clicked. We're going to use jQuery to slide
             the content of this container into view, with a slow
             transition. This is where the additional content will go.
+            content that the user can see when the Read More
+            link is clicked. We're going to use jQuery to slide
+            the content of this container into view, with a slow
+            transition. This is where the additional content will go.
+            This is where the additional content will go - the
+            content that the user can see when the Read More
+            link is clicked. We're going to use jQuery to slide
+            the content of this container into view, with a slow
+            transition. This is where the additional content will go.
+            This is where the additional content will go - the
+            content that the user can see when the Read More
+            link is clicked. We're going to use jQuery to slide
+            the content of this container into view, with a slow
+            transition. This is where the additional content will go.
+            content that the user can see when the Read More
+            link is clicked. We're going to use jQuery to slide
+            the content of this container into view, with a slow
+            transition. This is where the additional content will go.
+            This is where the additional content will go - the
+            content that the user can see when the Read More
+            link is clicked. We're going to use jQuery to slide
+            the content of this container into view, with a slow
+            transition. This is where the additional content will go.
+            This is where the additional content will go - the
+            content that the user can see when the Read More
+            link is clicked. We're going to use jQuery to slide
+            the content of this container into view, with a slow
+            transition. This is where the additional content will go.
         
 
         </div>
@@ -102,6 +131,7 @@
     <!-- END: Container. -->
 
             
+            </div>
             </div>
             </div>
         
@@ -118,9 +148,9 @@
        		  </div>
               </div>
                  <div id="slides"  class="slides_container">
-                 <div> <h3> Entrenaya </h3></div>
-                 <div> <h3> Anadón </h3></div>
-                 <div> <h3> Cadafalch </h3></div>
+                 <div> <h3> <a href="#" class="projectes">Entrenaya</a> </h3></div>
+                 <div> <h3> <a href="#" class="projectes">Anadón</a> </h3></div>
+                 <div> <h3> <a href="#" class="projectes">Cadafalch</a> </h3></div>
                  </div>
  
             
@@ -220,6 +250,8 @@ $(function() {
 		var hiddenFemtitle=$( "#quefem" );
 		var hiddenContitle=$( "#contacta" );
 		var hiddenCentral= $( "div.femcentral" );
+		var hiddenCentralprojects=$( "div.projectescentral" );
+		var hiddenCentralcontacta=$( "div.contactacentral" );
 		
 		
 		 
@@ -235,12 +267,29 @@ $(function() {
 					hiddenContent.slideUp( 400 );
 					hiddenFemtitle.slideDown(400);
 					hiddenProjects.slideDown(400);
+					hiddenCentralcontacta.toggle('slide', { direction: "left" }, 500);
                 } else {
                     // Show it slowly.
 					
                     hiddenContent.slideDown( 400 );
 					hiddenFemtitle.slideUp(400);
 					hiddenProjects.slideToggle(800,"easeOutBounce");
+					hiddenCentralcontacta.toggle('slide', { direction: "left" }, 500);
+                }
+            }
+        );
+		$( "a.projectes" ).click(
+            function( event ){
+                // Cancel the default event (this isn't a real link).
+                event.preventDefault();
+                // Check to see if the content is visible.
+                if (hiddenFem.is( ":visible" )){
+                    // Hide it slowly.
+					hiddenCentralprojects.toggle('slide', { direction: "left" }, 500);
+                } else {
+                    // Show it slowly.
+					
+					hiddenCentralprojects.toggle('slide', { direction: "left" }, 500);
                 }
             }
         );

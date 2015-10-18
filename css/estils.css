@@ -59,7 +59,9 @@ body {
     height:33.33%;
     min-height:100%;
     background-color:#999;  
-	padding-top: 10px; 
+	padding-top: 10px;
+	padding-left: 15px;
+    
 }
 
 h2 {
@@ -87,7 +89,7 @@ h2 {
 	}
 	
 #fletxes {
-	height: 5px;
+	height: 0px;
 	}
 #fletxes .gris {
 	color: #ccc;
@@ -141,9 +143,43 @@ h2 {
 	opacity: 0.8;
 	filter: alpha(opacity=40); /* For IE8 and earlier */	
 	}
+.projectescentral {
+	min-height: 1000px;
+	left: 0;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	z-index: 100;	
+	background-color:#4C2857;
+	opacity: 0.8;
+	filter: alpha(opacity=40); /* For IE8 and earlier */	
+	}
+	
+.contactacentral {
+	min-height: 1000px;
+	left: 0;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	z-index: 100;	
+	background-color:#999;
+	opacity: 0.8;
+	filter: alpha(opacity=40); /* For IE8 and earlier */	
+	}
 .femcontent {
 	width: 100%;
+	padding-top: 10px;
+	padding-left: 15px;
+    padding-bottom: 100%;
 	}
-#logo {
-	z-index:500;
+.content {
+	padding-top: 10px;
+	padding-left: 15px;
+    padding-bottom: 100%; 	
 	}
+
+    
