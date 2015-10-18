@@ -144,3 +144,6 @@ h2 {
 .femcontent {
 	width: 100%;
 	}
+.logo {
+	z-index:500;
+	}
