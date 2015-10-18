@@ -115,3 +115,18 @@ font-weight: 700;
 color: #fff;
 background-color: transparent;
 }
+#femcentral {
+	min-height: 1000px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	z-index: -100;	
+	background-color:#77952F;
+	opacity: 0.4;
+	filter: alpha(opacity=40); /* For IE8 and earlier */	
+	
+	
+	}
