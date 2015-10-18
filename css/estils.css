@@ -142,7 +142,7 @@ h2 {
 	overflow: hidden;
 	z-index: 100;	
 	background-color:#77952F;
-	opacity: 0.8;
+	opacity: 0.93;
 	filter: alpha(opacity=40); /* For IE8 and earlier */	
 	}
 .projectescentral {
@@ -155,7 +155,7 @@ h2 {
 	overflow: hidden;
 	z-index: 100;	
 	background-color:#4C2857;
-	opacity: 0.8;
+	opacity: 0.93;
 	filter: alpha(opacity=40); /* For IE8 and earlier */	
 	}
 	
@@ -169,7 +169,7 @@ h2 {
 	overflow: hidden;
 	z-index: 100;	
 	background-color:#999;
-	opacity: 0.8;
+	opacity: 0.93;
 	filter: alpha(opacity=40); /* For IE8 and earlier */	
 	}
 .femcontent {
