@@ -205,8 +205,8 @@ $(function() {
 					hiddenProjects.slideDown(400);
                 } else {
                     // Show it slowly.
-					
-                    hiddenContent.slideDown( 400 );
+					hiddenContent.slideToggle(400,"easeOutBounce");
+                    
 					hiddenProjects.slideUp( 400 );
                 }
             }
@@ -225,7 +225,6 @@ $(function() {
                 } else {
                     // Show it slowly.
 					hiddenFem.slideDown( 400);
-					hiddenFem.slideToggle(700,"easeOutBounce");
 					hiddenProjects.slideUp( 400);
                 }
             }
