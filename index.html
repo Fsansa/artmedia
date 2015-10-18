@@ -201,8 +201,9 @@ $(function() {
                 // Check to see if the content is visible.
                 if (hiddenContent.is( ":visible" )){
                     // Hide it slowly.
-					hiddenContent.slideToggle(800,"easeInBounce");
-					hiddenProjects.slideDown(400);
+					hiddenContent.slideUp( 400 );
+					
+					hiddenProjects.slideToggle(800,"easeInBounce");
                 } else {
                     // Show it slowly.
 					
@@ -220,7 +221,7 @@ $(function() {
                 if (hiddenFem.is( ":visible" )){
                     // Hide it slowly.
 					
-                    hiddenFem.slideToggle(800,"easeInBounce");
+                    hiddenFem.slideToggle(800,"easeOutBounce");
 					hiddenProjects.slideDown(400);
                 } else {
                     // Show it slowly.
