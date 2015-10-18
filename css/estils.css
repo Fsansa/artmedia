@@ -61,6 +61,11 @@ h1, h2 {
 	padding-top: 15px;
 	text-shadow: 1px 1px 4px #000000;
 	}
+#peu {
+	color: #FFFFFF;
+	text-shadow: 1px 1px 4px #000000;
+	margin-top: 30%;
+	}	
 .next {
 	color: whitesmoke;	
 	}	
@@ -87,4 +92,14 @@ h1, h2 {
 #fletxes ul li {
 	display: inline;
 	}
+#textCentral  {
+	margin-top: 35%;
+}
+
+#textCentral h3 {
+	color: #ffffff;
+	font-size: 40px;
+	margin-left: 70px;
+	margin_right: 70px;
 	
+}
