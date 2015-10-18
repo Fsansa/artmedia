@@ -206,12 +206,12 @@ $(function() {
                 // Check to see if the content is visible.
                 if (hiddenFem.is( ":visible" )){
                     // Hide it slowly.
-                    hiddenFem.slideUp( 800);
-					hiddenProjects.slideDown(800);
+                    hiddenFem.slideUp( 800,'easeOutBounce');
+					hiddenProjects.slideDown(800,'easeOutBounce');
                 } else {
                     // Show it slowly.
-					hiddenFem.slideDown( 800 );
-					hiddenProjects.slideUp( 800);
+					hiddenFem.slideDown( 800, 'easeOutBounce');
+					hiddenProjects.slideUp( 800, 'easeOutBounce');
                 }
             }
         );
