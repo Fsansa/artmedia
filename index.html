@@ -200,15 +200,13 @@ $(function() {
                 // Check to see if the content is visible.
                 if (hiddenContent.is( ":visible" )){
                     // Hide it slowly.
-					hiddenContent.slideUp(800);
-					hiddenProjects.slideDown(800);
+					hiddenContent.slideUp(400);
+					hiddenProjects.slideDown(400);
                 } else {
                     // Show it slowly.
-					hiddenContent.slideToggle('800', "easeOutBounce", function () {
-        // Animation complete.
-    });
-                    
-					hiddenProjects.slideUp( 800 );
+					
+                    hiddenContent.slideDown( 400 );
+					hiddenProjects.slideUp( 400 );
                 }
             }
         );
@@ -221,12 +219,12 @@ $(function() {
                 if (hiddenFem.is( ":visible" )){
                     // Hide it slowly.
 					
-                    hiddenFem.slideUp(800);
-					hiddenProjects.slideDown(800);
+                    hiddenFem.slideUp(400);
+					hiddenProjects.slideDown(400);
                 } else {
                     // Show it slowly.
-					hiddenFem.slideDown( 800);
-					hiddenProjects.slideUp( 800);
+					hiddenFem.slideDown( 400);
+					hiddenProjects.slideUp( 400);
                 }
             }
         );
