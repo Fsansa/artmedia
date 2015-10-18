@@ -180,6 +180,7 @@ $(function() {
         var hiddenContent = $( "div.content" );
 		var hiddenProjects =$( "div.projectes" );
 		var hiddenFem =$( "div.femcontent" );
+		 $.easing.def = "easeOutBounce";
 		
         // Bind to the Read More link to toggle the
         $( "a.readMore" ).click(
@@ -207,13 +208,12 @@ $(function() {
                 if (hiddenFem.is( ":visible" )){
                     // Hide it slowly.
 					
-                    hiddenFem.slideUp(800).animate('slow','easeOutBounce');
-					hiddenProjects.slideDown(800).animate('slow','easeOutBounce');
+                    hiddenFem.slideUp(800);
+					hiddenProjects.slideDown(800);
                 } else {
                     // Show it slowly.
-					hiddenFem.slideDown(800).animate('slow','easeOutBounce');
-					hiddenProjects.slideUp(800).animate('slow','easeOutBounce');
-					
+					hiddenFem.slideDown( 800);
+					hiddenProjects.slideUp( 800);
                 }
             }
         );
