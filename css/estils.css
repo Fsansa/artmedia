@@ -1,4 +1,7 @@
-html,body{height:100%;}
+html,body{
+	
+font-family: 'Noto Sans', sans-serif;
+}
 
 
 #video{
@@ -45,8 +48,10 @@ html,body{height:100%;}
     padding:10px;
 }
 
-h1 {
+h1, h2 {
+	font-family: 'Pacifico', cursive;
 	color: whitesmoke;
+	
 	
 	}
 .next {
