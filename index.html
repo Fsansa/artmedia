@@ -206,7 +206,8 @@ $(function() {
                 // Check to see if the content is visible.
                 if (hiddenFem.is( ":visible" )){
                     // Hide it slowly.
-                    hiddenFem.slideUp( 800,'easeOutBounce');
+					HiddenFem.slideUp("fade", {},  {duration:800}).effect("bounce", { times:1 },  { duration:800}).dequeue();
+                    
 					hiddenProjects.slideDown(800,'easeOutBounce');
                 } else {
                     // Show it slowly.
