@@ -144,6 +144,10 @@ background-color: transparent;
 	background-color:#77952F;
 	opacity: 0.8;
 	filter: alpha(opacity=40); /* For IE8 and earlier */	
+	}
+.femcontent {
+	width: 100%;
+	
 	
 	
 	}
