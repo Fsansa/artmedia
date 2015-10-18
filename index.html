@@ -200,7 +200,7 @@ $(function() {
 		var hiddenProjects =$( "div.projectes" );
 		var hiddenFem =$( "div.femcontent" );
 		var hiddenCentral= $( "div.femcentral" );
-		var hiddenContacta= $( "div.contacta" );
+		
 		
 		 
 		
@@ -233,13 +233,13 @@ $(function() {
                     // Hide it slowly.
                     hiddenFem.slideToggle(800,"easeOutBounce");
 					hiddenProjects.slideDown(400);
-					hiddenContacta.slideDown(400);
+					hiddenContent.slideDown(400);
 					//hiddenCentral.toggle('slide', { direction: "right" }, 500);
                 } else {
                     // Show it slowly.
 					hiddenFem.slideDown( 400);
 					hiddenProjects.slideUp(400);
-					hiddenContacta.slideToggle(800,"easeOutBounce");
+					hiddenContent.slideToggle(800,"easeOutBounce");
 					hiddenCentral.toggle('slide', { direction: "left" }, 500);
 					
 					
