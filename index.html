@@ -27,6 +27,10 @@
 <div class="container-fluid">
 	<div class="row">
 	<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12" >
+    <div class="femcentral" style="display: none ;">
+    
+    Que fem
+    </div>
     <div id="video">
     	<div id="vid">
     	<video loop muted autoplay poster="img/fons.jpg" class="background">
@@ -79,6 +83,7 @@
         
 
         </div>
+        
         <!-- END: Hidden Content. -->
         </div>
     <!-- END: Container. -->
@@ -191,6 +196,7 @@ $(function() {
         var hiddenContent = $( "div.content" );
 		var hiddenProjects =$( "div.projectes" );
 		var hiddenFem =$( "div.femcontent" );
+		var hiddenCentral= $( "div.femcentral" );
 		 
 		
         // Bind to the Read More link to toggle the
@@ -227,6 +233,8 @@ $(function() {
                     // Show it slowly.
 					hiddenFem.slideDown( 400);
 					hiddenProjects.slideToggle(800,"easeOutBounce");
+					hiddencentral.slide(400);
+					
                 }
             }
         );
