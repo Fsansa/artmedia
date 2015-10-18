@@ -201,7 +201,7 @@ $(function() {
                 // Check to see if the content is visible.
                 if (hiddenContent.is( ":visible" )){
                     // Hide it slowly.
-					hiddenContent.slideUp(400);
+					hiddenContent.slideToggle(800,"easeOutBounce");
 					hiddenProjects.slideDown(400);
                 } else {
                     // Show it slowly.
