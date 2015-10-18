@@ -116,9 +116,8 @@
         
         </div>
         <div class="row">
-        	<div id="contacta" class="col-md-12">
-            
-            <div style="width: 300px ; padding: 10px ;">
+        	<div id="contacta" class="col-md-12 ">
+            <div class="content" style="width: 300px ; padding: 10px ;">
 
        <h2>Em vols <a href="#" class="readMore">moure?</a></h2>
 
@@ -203,7 +202,7 @@ $(function() {
 		var hiddenProjects =$( "div.projectes" );
 		var hiddenFem =$( "div.femcontent" );
 		var hiddenCentral= $( "div.femcentral" );
-		var hiddenContacta= $( "div.contacta" );
+		
 		
 		 
 		
@@ -236,16 +235,14 @@ $(function() {
                     // Hide it slowly.
                     hiddenFem.slideToggle(800,"easeOutBounce");
 					hiddenProjects.slideDown(400);
-					hiddenContacta.slideDown(400);
-					//hiddenCentral.toggle('slide', { direction: "right" }, 500);
+					hiddenContent.slideDown(400);
+					hiddenCentral.toggle('slide', { direction: "left" }, 500);
                 } else {
                     // Show it slowly.
 					hiddenFem.slideDown( 400);
-					hiddenProjects.slideToggle(800,"easeOutBounce");
-					hiddenContacta.slideUp(400);
+					hiddenProjects.slideUp(400);
+					hiddenContent.slideToggle(800,"easeOutBounce");
 					hiddenCentral.toggle('slide', { direction: "left" }, 500);
-					
-					
                 }
             }
         );
