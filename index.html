@@ -51,7 +51,7 @@
     </div>
     <div class="projectescentral" style="display:none;">
     Projectes
-    <div id="roda"></div>
+    <div id="roda" value="75"></div>
      
     </div>
     <div class="contactacentral" style="display:none;">
@@ -387,30 +387,33 @@ var startColor = '#FC5B3F';
 var endColor = '#6FD57F';
 
 var element = document.getElementById('roda');
+
 var circle = new ProgressBar.Circle(element, {
     color: startColor,
-    trailColor: '#eee',
-    trailWidth: 1,
-    duration: 5000,
     easing: 'bounce',
-    strokeWidth: 5,
-	text: {
-        value: '0'
+    strokeWidth: 8,
+    trailWidth: 1,
+    duration: 8000,
+    text: {
+        value: '5'
     },
-   
-	step: function(state, circle) {
-        circle.path.setAttribute('stroke', state.color);
-    }, 
+    
+    step: function(state, bar) {
 
-
-
-    // Set default step function for all animate calls
-   
+        bar.setText((bar.value() * 100).toFixed(0));
+    }
 });
+  var value = ($('#roda').attr('value') / 100);
 
-circle.animate(1.0, {
+// This will determine the circumference of the circle
+circle.animate(value, {
     from: {color: startColor},
-    to: {color: endColor},
+    to: {color: endColor}, 
+    step: function(state, circle, bar) {
+        circle.path.setAttribute('stroke', state.color);
+        console.log(circle);
+        circle.setText((circle.value() * 100).toFixed(0));
+        }
 });
 
 
