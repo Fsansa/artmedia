@@ -51,6 +51,8 @@
     </div>
     <div class="projectescentral" style="display:none;">
     Projectes
+    <div id="roda"></div>
+     
     </div>
     <div class="contactacentral" style="display:none;">
     <h1>Contacta</h1>
@@ -166,7 +168,11 @@
        		  </div>
               </div>
                  <div id="slides"  class="slides_container">
-                 <div> <h3> <a href="#" class="projectes">Entrenaya</a> </h3></div>
+                 <div> <h3> <a href="#" class="projectes">Entrenaya</a> </h3>
+                 
+                 
+                 
+                 </div>
                  <div> <h3> <a href="#" class="projectes">Anadón</a> </h3></div>
                  <div> <h3> <a href="#" class="projectes">Cadafalch</a> </h3></div>
                  </div>
@@ -216,7 +222,7 @@
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false"></script>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-
+<script src="js/progressbar.js"></script>
 
 
 <!-- slider de posts-->
@@ -376,7 +382,36 @@ google.maps.event.addDomListener(window, "load", function () {
   
 
 });
+//Roda amb tant percent
+var startColor = '#FC5B3F';
+var endColor = '#6FD57F';
 
+var element = document.getElementById('roda');
+var circle = new ProgressBar.Circle(element, {
+    color: startColor,
+    trailColor: '#eee',
+    trailWidth: 1,
+    duration: 5000,
+    easing: 'bounce',
+    strokeWidth: 5,
+	text: {
+        value: '0'
+    },
+   
+	step: function(state, circle) {
+        circle.path.setAttribute('stroke', state.color);
+    }, 
+
+
+
+    // Set default step function for all animate calls
+   
+});
+
+circle.animate(1.0, {
+    from: {color: startColor},
+    to: {color: endColor},
+});
 
 
 	</script>
