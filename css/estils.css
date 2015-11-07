@@ -141,7 +141,7 @@ h2 {
 	position: absolute;
 	overflow: hidden;
 	z-index: 100;	
-	background-color:#77952F;
+	background-color:rgba(6, 6, 6, 0.89);
 	opacity: 0.93;
 	filter: alpha(opacity=40); /* For IE8 and earlier */	
 	}
