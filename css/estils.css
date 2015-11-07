@@ -5,6 +5,7 @@ font-family: 'Noto Sans', sans-serif;
 body {
 	overflow: hidden;
 	height:100%;
+	color: white;
 }
 
 .col-md-6, .col-lg-6, .col-sm-12, .col-xs-12 {
